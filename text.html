@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshul Diwakar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script>
+        $(document).ready(function() {
+            // Smooth scrolling for navigation links
+            $('nav ul li a').on('click', function(event) {
+                event.preventDefault();
+                var target = $(this).attr('href');
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top
+                }, 800);
+            });
+            // Back to Top button functionality
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('#backToTop').fadeIn();
+                } else {
+                    $('#backToTop').fadeOut();
+                }
+            });
+            $('#backToTop').click(function() {
+                $('html, body').animate({ scrollTop: 0 }, 800);
+                return false;
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Anshul Diwakar</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#images">Images</a></li> 
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Anshul Diwakar, a dynamic and dedicated educator with a rich tapestry of professional experiences spanning multiple countries and diverse sectors. With five years of expertise at the National Securities Depository Limited (NSDL) in India, I honed my skills in finance and compliance, laying a strong foundation in organizational operations. My journey took me to the World Peace Organisation, where I spent four transformative years in South Korea and Thailand, working towards global harmony and understanding through various peace initiatives. Building on that experience, I contributed to the Universal Peace Federation for two years across with Indian and the USA Organisation, promoting interfaith dialogue and collaborative efforts for peacebuilding.
+            
+        Currently, I bring my wealth of knowledge and global perspective to the classroom as a teacher in Russia, where I inspire a new generation of learners through innovative teaching methods and a commitment to holistic education. My diverse background in education, finance, and peace advocacy uniquely positions me to foster a learning environment that encourages critical thinking, empathy, and cultural awareness among my students. Now I am working as a passionate web developer with skills in HTML, CSS, and JavaScript. I love creating beautiful and functional websites.</p>
+    </section>
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>"Bridging Divides: A Community Peace Initiative"</p>
+            <a href="project1.pdf" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>"Exploring Our Community: A Journey Through History and Culture"</p>
+            <a href="Project 2.pdf" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Project 3</h3>
+            <p>Creating a website project for Tata Motors, one of India's largest automotive manufacturers, involves outlining the structure, features, design, and content for the website. Below is a comprehensive proposal for a Tata Car Company website project.</p>
+            <a href="project 3.pdf" target="_blank">View Project</a>
+        </div>
+    </section>
+    <section id="images">
+        <h2>Gallery</h2>
+        <div class="image-section">
+            <div class="image-container">
+                <img src="img/img.png" alt="image" class="image">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out via email at <a href="mailto:anshul.diwaker@gmail.com">anshul.diwaker@gmail.com</a>.</p>
+        <p>Feel free to reach out via phone number <a href="tel:+79634464990">+7 9634464990</a>.</p>
+    </section>
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <blockquote>
+            <p>"Anshul is a dedicated educator who always goes the extra mile for his students." - Former Student</p>
+        </blockquote>
+        <blockquote>
+            <p>"His projects are both innovative and impactful, making a real difference in the community." - Colleague</p>
+        </blockquote>
+    </section>
+    <footer>
+        <p>&copy; 2025 Anshul Diwakar. All rights reserved.</p>
+        <div>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/yourprofile" target="_blank">GitHub</a> |
+            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <div id="backToTop" style="display:none; position:fixed; bottom:20px; right:20px; background:#f39c12; color:white; padding:10px; border-radius:5px; cursor:pointer;">
+        Back to Top
+    </div>
+</body>
+</html>
